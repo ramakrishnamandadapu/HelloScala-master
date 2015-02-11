@@ -7,8 +7,7 @@ import org.springframework.boot.SpringApplication
 /**
  * This config class will trigger Spring @annotation scanning and auto configure Spring context.
  *
- * @author saung
- * @since 1.0
+ * 
  */
 @Configuration
 @EnableAutoConfiguration
