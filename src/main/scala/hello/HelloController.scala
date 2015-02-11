@@ -9,7 +9,7 @@ import java.util.concurrent.atomic.AtomicLong
 class HelloController {
   private final val template: String = "Hello, %s!";
   private final val counter: AtomicLong = new AtomicLong();
-  @RequestMapping(Array("/greeting"))
+  @RequestMapping(Array("/"))
   def greetings(@RequestParam(value = "name", defaultValue = "World") name: String): Greeting = {
     return new Greeting(counter.incrementAndGet(),
       String.format(template, name));
